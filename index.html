@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoSwap – Plastic, without the Pollution</title>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <!-- Your external CSS -->
+  <link rel="stylesheet" href="style.css" /> :contentReference[oaicite:0]{index=0}
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <nav>
+      <div class="logo">EcoSwap</div>
+      <ul>
+        <li><a href="#offerings">Offerings</a></li>
+        <li><a href="#gallery">Upcycling</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1><span>Plastic, without the pollution.</span></h1>
+      <p>At EcoSwap, we turn waste plastics into community resources—reducing pollution, one swap at a time.</p>
+      <div class="hero-buttons">
+        <a href="#offerings" class="btn-primary">See Offerings</a>
+        <a href="#calculator" class="btn-secondary">Calculate Reward</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCT OFFERINGS -->
+  <section id="offerings">
+    <h2 class="section-title"><i class="fas fa-gift"></i> Product Offerings</h2>
+    <div class="offer-grid">
+      <div class="offer-item"><i class="fas fa-utensils"></i><h3>Single‑Use Plastics</h3></div>
+      <div class="offer-item"><i class="fas fa-car"></i><h3>Automotive & Textiles</h3></div>
+      <div class="offer-item"><i class="fas fa-stethoscope"></i><h3>Medical Tools & Products</h3></div>
+      <div class="offer-item"><i class="fas fa-box"></i><h3>Packaging</h3></div>
+    </div>
+  </section>
+
+  <!-- UPCYCLING EXAMPLES -->
+  <section id="gallery">
+    <h2 class="section-title"><i class="fas fa-recycle"></i> Upcycling Examples</h2>
+    <div class="gallery-grid">
+      <figure class="gallery-item">
+        <img src="cans.jfif" alt="Cans repurposed into roofing">
+        <figcaption>Aluminum cans repurposed into durable roofing panels.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="car.jfif" alt="Recycled steel automotive frame">
+        <figcaption>Recycled steel used in ultra‑strong automotive frames.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="jacket.jfif" alt="Jacket made from plastic bottles">
+        <figcaption>Plastic bottles transformed into warm, durable jackets.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- EVENTS & SPONSORS -->
+  <section id="events">
+    <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Upcoming Events</h2>
+    <div class="card-list">
+      <div class="card event-card"><h3>Plastic Cleanup Drive</h3><p>May 30 · Marina Beach</p></div>
+      <div class="card event-card"><h3>Recycle Workshop</h3><p>June 12 · Community Center</p></div>
+    </div>
+
+    <h2 class="section-title"><i class="fas fa-handshake"></i> Our Sponsors</h2>
+    <div class="card-list">
+      <div class="card sponsor-card">
+        <div class="sponsor-logo-text">PlastiCo</div>
+        <p>10% off on recycled bins</p>
+      </div>
+      <div class="card sponsor-card">
+        <div class="sponsor-logo-text">OceanGuard</div>
+        <p>Free collection bags</p>
+      </div>
+      <div class="card sponsor-card">
+        <div class="sponsor-logo-text">GreenWorks</div>
+        <p>AED 3/kg plastic</p>
+      </div>
+    </div>
+    <div class="sponsor-cta">
+      <a href="#contact" class="btn-secondary">Partner with Us</a>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section id="calculator">
+    <h2 class="section-title"><i class="fas fa-coins"></i> Recycling Reward Calculator</h2>
+    <div class="calc-wrapper">
+      <div class="calc-card">
+        <h3>Plastic</h3>
+        <p>Rate: AED 0.50/kg</p>
+        <input id="plasticWeight" type="number" placeholder="kg of plastic">
+        <button onclick="calcPlastic()">Calculate</button>
+        <div id="plasticResult" class="result">—</div>
+      </div>
+      <div class="calc-card">
+        <h3>Cardboard</h3>
+        <p>Rate: AED 0.30/kg</p>
+        <input id="cardboardWeight" type="number" placeholder="kg of cardboard">
+        <button onclick="calcCardboard()">Calculate</button>
+        <div id="cardboardResult" class="result">—</div>
+      </div>
+      <div class="calc-card">
+        <h3>Cans</h3>
+        <p>Rate: AED 0.80/kg</p>
+        <input id="cansWeight" type="number" placeholder="kg of cans">
+        <button onclick="calcCans()">Calculate</button>
+        <div id="cansResult" class="result">—</div>
+      </div>
+      <div class="calc-card" id="othersCard">
+        <h3>Others</h3>
+        <p>Rate: AED 0.20/kg</p>
+        <input id="othersWeight" type="number" placeholder="kg of other waste">
+        <button onclick="calcOthers()">Calculate</button>
+        <div id="othersResult" class="result">—</div>
+      </div>
+    </div>
+  </section>
+s
+  <!-- ABOUT US -->
+  <section id="about">
+    <h2 class="section-title"><i class="fas fa-leaf"></i> About EcoSwap</h2>
+    <div class="about-content">
+      <p>
+        Founded in 2023, EcoSwap is a respected platform dedicated to protecting
+        our environment. By facilitating the exchange and recycling of plastics,
+        cardboard, cans, and more, our goal is to reduce pollution and foster
+        sustainable communities. Join us in making a positive impact on the planet.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    &copy; 2025 EcoSwap • Together for a cleaner planet
+  </footer>
+
+  <!-- Your external JS -->
+  <script src="script.js"></script> :contentReference[oaicite:1]{index=1}
+</body>
+</html>
